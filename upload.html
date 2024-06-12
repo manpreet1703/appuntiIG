@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carica Appunti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="upload.html">Carica Appunti</a></li>
+            <li><a href="notes.html">I miei Appunti</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Carica i tuoi appunti</h1>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="file">Seleziona il file:</label>
+            <input type="file" name="file" id="file">
+            <input type="submit" value="Carica">
+        </form>
+    </div>
+</body>
+</html>
