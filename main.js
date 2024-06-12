@@ -21,25 +21,7 @@ if (registerForm) {
         firebase.auth().createUserWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 alert('Registrazione avvenuta con successo');
-                window.location.href = 'index.html';
-            })
-            .catch((error) => {
-                alert('Errore: ' + error.message);
-            });
-    });
-}
-
-// Gestione login
-const loginForm = document.getElementById('loginForm');
-if (loginForm) {
-    loginForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = e.target.email.value;
-        const password = e.target.password.value;
-        firebase.auth().signInWithEmailAndPassword(email, password)
-            .then((userCredential) => {
-                alert('Login avvenuto con successo');
-                window.location.href = 'index.html';
+                window.location.href = 'index.html';  // Reindirizza alla pagina principale
             })
             .catch((error) => {
                 alert('Errore: ' + error.message);
